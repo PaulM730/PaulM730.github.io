@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab2 Web Application</title>
 <style>
-    div{
+    #first-animation{
         width:30px;
         height: 100px;
         background-color: black;
@@ -15,6 +15,25 @@
         width: 300px;
         background-color:aquamarine;
     }
+
+    @keyframes secondAnimation{
+        0% {background-color: aliceblue;}
+        20% {background-color: aqua;}
+        40% {background-color: cadetblue;}
+        60% {background-color: cornflowerblue;}
+        80% {background-color: darkcyan;}
+        100% {background-color: darkblue;}
+    }
+
+    #second-animation{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: whitesmoke;
+        animation-name: secondAnimation;
+        animation-duration: 2s;
+    }
+    
 </style>
 </head>
 <body>
@@ -24,7 +43,13 @@
         This first one is a test of color and transition
     </p>
 
-    <div></div>
+    <div id="first-animation"></div>
+
+    <p>
+        This second one is an animation that changes color over 5 frames
+    </p>
+
+    <div id="second-animation"></div>
 
 </body>
 </html>
