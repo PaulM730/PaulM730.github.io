@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Flexbox Fun</title>
+        <style>
+
+
+        /* Additional styles for fun */
+        .red { background: tomato; }
+        .blue { background: dodgerblue; }
+        .green { background: mediumseagreen; }
+        .orange { background: orange; }
+        .purple { background: rebeccapurple; }
+
+        .flex-item{
+
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-size: 2cm;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-container{
+            background-color: lightgray;
+            padding: 20px;
+
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+
+        }
+        .site-nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+        }
+
+        .logo{
+            padding-left: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-links{
+            display:flex;
+            justify-content: end;
+            padding-right: 15px;
+            gap: 15px;
+
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-size: 24px;
+            color: white;
+            flex-direction: row;
+
+        }
+        .nav-links a:hover{
+            color: rgb(141, 202, 238);
+            
+        }
+
+        @media (min-width: 600px){
+                .flex-item{
+                    color:gray;
+                    flex-direction: row;
+
+            }
+
+        @media (min-width: 900px){
+                .flex-item{
+                    color:purple;
+                    flex-direction: row;
+                    gap: 10px;
+                }
+            }
+        
+        @media (max-width: 600px){
+            .site-nav{
+                flex-direction: column;
+                padding: 15px;
+                align-items: flex-start;
+            }
+            .nav-links{
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .nav-links a{
+                text-decoration: none;
+                font-size: 16px;
+            }
+        }
+        </style>
+        </head>
+
+        <body>
+            <header>
+                <nav class="site-nav">
+                    <div class="logo">MySite</div>
+                        <ul class="nav-links">
+                            <li><a href="myflex.html">Flex</a></li>
+                            <li><a href="layout.html">Layout</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                </nav>
+
+
+                <h1>FlexBox practice</h1>
+            </header>
+        <main>
+            <section class="flex-container">
+                <div class="flex-item red">1</div>
+                <div class="flex-item blue">2</div>
+                <div class="flex-item green">3</div>
+                <div class="flex-item orange">4</div>
+                <div class="flex-item purple">5</div>
+            </section>
+        </main>
+            <footer>
+                <p>Do we need this?</p>
+            </footer>
+        </body>
+</html>
+<!-- GOAL (initially): use INLINE styles to make width/height 100px,
+text white, and font-size 2em for .flex-item -->
