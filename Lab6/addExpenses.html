@@ -39,24 +39,31 @@
     
     </div>
 
-    <div class="input-group mb-3">
-        <label for="category" class="form-label">Select a Category of expense</label>
-    </div>
-
-    <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-  <label class="form-check-label" for="checkDefault">
-    Default checkbox
-  </label>
-</div>
 
     <div class="mb-3 form-check">
-    <label  for="catergory" class="form-label">Expense Catergory: </label>
+    <label  for="catergory" class="form-label">Catergory of Expenses: </label>
 
     <br></br>
 
     <label class="form-check-label" for="catergory1">Groceries</label>
         <input type="checkbox" class="form-check-input" id="catergory1"> 
+        <br></br>
+
+    <label class="form-check-label" for="catergory2">Business</label>
+        <input type="checkbox" class="form-check-input" id="catergory2"> 
+        <br></br>
+
+        <label class="form-check-label" for="catergory3">Restaurants</label>
+        <input type="checkbox" class="form-check-input" id="catergory3"> 
+        <br></br>
+
+        <label class="form-check-label" for="catergory4">Rent/Housing</label>
+        <input type="checkbox" class="form-check-input" id="catergory4"> 
+        <br></br>
+
+        <label class="form-check-label" for="catergory5">Fun</label>
+        <input type="checkbox" class="form-check-input" id="catergory5"> 
+        <br></br>
         
         
     
@@ -72,8 +79,19 @@
                 <option value="cash">Cash</option>
         </select>
         </div>
-        <button type="submit" onclick="location.href='addExpenses.html'" class="btn btn-primary">Submit</button>
+
+        <div class="mb-3">
+            <textarea id="message" name="message" placeholder="Explaination of expenses if needed..."></textarea>
+                <style>
+                #message {width: 85%; height: 90px; font-size: 16px}
+                </style>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+
     </form>
+
+
 
     <script src="addExpensesScript.js" defer></script>
 

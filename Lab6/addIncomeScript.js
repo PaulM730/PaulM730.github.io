@@ -18,5 +18,5 @@ document.getElementById("addIncome").addEventListener("submit", function (e) {
     console.log("Form submitted successfully!");
     console.log("Source of Income:", source);
     console.log("Amount of Income:", amount);
-    console.log("Frrquency of Income:", frequency);
+    console.log("Frequency of Income:", frequency);
 });
